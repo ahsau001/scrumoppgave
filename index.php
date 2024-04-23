@@ -25,6 +25,7 @@ if (!empty($_POST["firstName"]) && !empty($_POST["lastName"]) && !empty($_POST["
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Wolfenstein LAN påmelding</title>
 </head>
 <body>
@@ -37,6 +38,7 @@ if (!empty($_POST["firstName"]) && !empty($_POST["lastName"]) && !empty($_POST["
         <input type="text" id="lastName" name="lastName" maxlength="50">
         <label for="email">Epost</label>
         <input type="email" id="email" name="email" maxlength="255">
+        <p>Du kan ikke melde deg av</p>
         <button type="submit">Meld deg på</button>
         <?php
         if (!empty($message)) {

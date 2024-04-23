@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  text-align: center;
+  color: #333;
+}
+body form, body .pretty {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+body form label, body .pretty label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+body form input[type=text],
+body form input[type=email], body .pretty input[type=text],
+body .pretty input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body form button[type=submit], body .pretty button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body form button[type=submit]:hover, body .pretty button[type=submit]:hover {
+  background-color: #555;
+}
+body p {
+  text-align: center;
+  color: #333;
+  margin-top: 10px;
+}
+body .pretty {
+  width: fit-content;
+}
+body table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+}
+body table th {
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+body table th, body table td {
+  text-align: left;
+}
+body table tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+body table tr:hover {
+  background-color: #ddd;
+}
+
+/*# sourceMappingURL=styles.css.map */
