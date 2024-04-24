@@ -18,7 +18,7 @@ body form, body .pretty {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 body form label, body .pretty label {
   display: block;
@@ -57,15 +57,25 @@ body .pretty {
 }
 body table {
   width: 100%;
-  max-width: 500px;
+  min-width: 800px;
   border-collapse: collapse;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  white-space: nowrap;
+  background-color: white;
+}
+body table thead th {
+  background: #eee;
 }
 body table th {
   border-bottom: 2px solid #ddd;
   font-weight: bold;
 }
 body table th, body table td {
-  text-align: left;
+  text-align: center;
+  padding: 8px;
 }
 body table tr:nth-child(even) {
   background-color: #eeeeee;
