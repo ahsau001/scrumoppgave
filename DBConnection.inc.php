@@ -1,5 +1,5 @@
 <?php
 function GetDBConnection()
 {
-    return mysqli_connect("localhost", "nani", "nani", "wolfenstein");
+    return mysqli_connect("localhost", "root", "123", "scrumoppgave");
 }
