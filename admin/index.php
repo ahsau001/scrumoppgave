@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Påmeldte på Wolfenstein LAN</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <h1>Påmeldte på Wolfenstein LAN</h1>
     <div class="pretty">
         <?php
-        include_once "DBConnection.inc.php";
+        include_once "../DBConnection.inc.php";
         $conn = GetDBConnection();
         $registered = $conn->query("SELECT * FROM registered")->fetch_all(MYSQLI_ASSOC);
         if (empty($registered)) {
