@@ -1,15 +1,3 @@
 # Wolfenstein påmelding
 
-
-### Backlog
-* Add apache/nginx auth til view.php
-* Lag kanban
-
-### In Progress
-
-### To Test/Document
-* Påmeldings side
-* Se påmeldte side
-* Nettside styling
-
-### Done
+View kanban [here](https://github.com/users/ahsau001/projects/3)
