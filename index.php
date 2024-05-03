@@ -6,7 +6,11 @@ if (!empty($_POST["firstName"]) && !empty($_POST["lastName"]) && !empty($_POST["
     $lastName = $_POST["lastName"];
     $email = $_POST["email"];
     try {
-        $result = $conn->query("INSERT INTO registered (first_name, last_name, email) VALUES ('$firstName', '$lastName', '$email')");
+        $stmt = $conn->prepare("INSERT INTO registered (first_name, last_name, email) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $firstName, $lastName, $email);
+        $stmt->execute();
+        $stmt->close();
+
         $message = "Registrering vellykket";
     } catch (Exception $exception) {
         if ($exception->getCode() === 1062) {
@@ -17,6 +21,7 @@ if (!empty($_POST["firstName"]) && !empty($_POST["lastName"]) && !empty($_POST["
         }
     }
 }
+$conn->close();
 ?>
 <!doctype html>
 <html lang="en">
